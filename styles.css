@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400&family=Merriweather:wght@400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gowun Batang", serif;
+  font-weight: 400;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.accordion {
+  max-width: 850px;
+  margin: 0 auto;
+  border: 2px solid #000;
+  border-radius: 25px;
+  padding: 80px;
+}
+
+.accordion h1 {
+  font-size: 2.8rem;
+}
+
+.accordion p {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.accordion-item {
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.accordion-button {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  width: 100%;
+  text-align: left;
+  padding: 15px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3 ease;
+  border-radius: 10px;
+  font-size: 1.15rem;
+}
+
+.accordion-button:hover {
+  background-color: #333;
+}
+
+.accordion-content {
+  margin-top: 8px;
+  max-height: 0;
+  padding: 0 15px;
+  background-color: #f0f0f0;
+  font-size: 1.14rem;
+  color: #555;
+  border-radius: 10px;
+  border: 2px solid #000;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.5s ease, padding 0.3s ease, opacity 0.3s ease;
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 500px;
+  padding: 15px;
+  opacity: 1;
+}
+
+
+a,
+a:active,
+a:visited {
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #499;
+}
